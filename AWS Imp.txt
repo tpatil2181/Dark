@@ -1,0 +1,48 @@
+3 linux command 
+1)Sudo su 
+2)Yum update -y
+3)Yum install httpd -y 
+4)cd  /var/www/html
+5)echo “Hii my name is Tushar Welcome to my page”>index.html
+6)ls
+7)service httpd start
+8)cnk config httpd on.
+
+
+
+4 and 5 practical webserver
+#!/bin/bash
+dnf install -y httpd
+systemctl enable httpd
+systemctl start httpd
+echo '<html><h1>Hello From Your Web Server!</h1></html>' > /var/www/html/index.html
+
+10 Hadoop database
+1)Sudo hive
+2)Create database demo; ( It will create a database named demo)
+3)show databases; ( It will show all the databases)
+   Now run the command to create a table and fields.
+4)Create table demo.employee(id int,name string, salary, string float)
+5)row format delimited
+6)fields terminated by ‘,’;
+
+11 web feed (python program)
+1)sudo yum install python3 
+2)sudo yum install python3-pip 
+3)pip install feedparser
+4)nano demo.py 
+
+	import feedparser
+	d=feedparser.parser('http://www.reddit.com/r/python/.rss')
+	print(d['feed']['tital'])
+	print(d['feed']['link'])
+	print(d.feed.subtital)
+	print(len(d['entries']))
+
+   then hit
+5)ctrl+X 
+6)ls (list of program)
+7)python3 demo.py 
+
+
+13 EBS
