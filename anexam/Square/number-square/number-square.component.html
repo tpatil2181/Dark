@@ -1,0 +1,8 @@
+<div>
+    <h2>Number Square</h2>
+    <label for="numberInput">Enter a number: </label>
+    <input type="number" id="numberInput" [(ngModel)]="userNumber">
+    <button (click)="calculateSquare()">Calculate Square</button>
+    <p *ngIf="square">The square of {{userNumber}} is {{square}}</p>
+  </div>
+  

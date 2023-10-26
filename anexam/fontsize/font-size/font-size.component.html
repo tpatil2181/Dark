@@ -1,0 +1,14 @@
+<div>
+    <h2>Font Size Changer</h2>
+    <label for="fontSizeInput">Enter Font Size (in px): </label>
+    <input type="number" id="fontSizeInput" [(ngModel)]="fontSize" (change)="applyFontSize()">
+    <p [style.font]="fontSize + 'px'">Modern college of Arts, Science and Commerce.</p>
+  </div>
+  
+<!-- 
+  <div class="app">
+    <input type="number" [(ngModel)]="fontSize"
+    <p [style.font-size.px]="fontSize">Modern college of Arts, Science and Commerce.</p>
+  </div>
+  
+ -->
